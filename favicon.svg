@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GM">
+  <circle cx="32" cy="32" r="32" fill="#e8336d"/>
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity=".55"/>
+  <text x="32" y="41" text-anchor="middle"
+        font-family="Trebuchet MS, Verdana, sans-serif" font-size="26" font-weight="bold"
+        fill="#ffffff" letter-spacing="1">GM</text>
+</svg>

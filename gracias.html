@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¡Gracias por tu compra! · Maestra Gaby Mora</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#e8336d">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="Maestra Gaby Mora, volver al inicio">
+    <span class="brand-mark" aria-hidden="true">GM</span>
+    <span class="brand-text">
+      <strong>Maestra Gaby Mora</strong>
+      <em>alfabetización inicial</em>
+    </span>
+  </a>
+</header>
+
+<main class="hero gracias">
+  <div class="container narrow center">
+    <p class="gracias-emoji" aria-hidden="true">🎉</p>
+    <p class="eyebrow">Pago recibido</p>
+    <h1>¡Gracias por tu compra!</h1>
+    <p class="lead">
+      Stripe ya te envió el recibo a tu correo. Ahora me toca a mí:
+      te mando tus archivos en PDF (o tu acceso al curso) a ese mismo correo
+      en cuanto confirme tu pago ✨
+    </p>
+
+    <ol class="gracias-pasos">
+      <li><strong>Revisa tu correo</strong>, también la carpeta de spam o promociones.</li>
+      <li><strong>Descarga e imprime</strong> tus materiales las veces que necesites para tu grupo.</li>
+      <li><strong>¿Algo no llegó?</strong> Escríbeme y lo resolvemos.</li>
+    </ol>
+
+    <div class="contacto-cta">
+      <a class="btn btn-wa btn-lg" id="wa-gracias" href="#" target="_blank" rel="noopener">Escribirme por WhatsApp</a>
+      <a class="btn btn-ghost btn-lg" href="index.html#materiales">Seguir viendo materiales</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-legal">© <span id="year">2026</span> Gabriela Mora. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("wa-gracias").href =
+    "https://wa.me/" + CONFIG.whatsapp + "?text=" +
+    encodeURIComponent("¡Hola Gaby! Acabo de pagar con tarjeta en tu página ✏️");
+</script>
+</body>
+</html>
