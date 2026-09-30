@@ -12,12 +12,9 @@ const mxn = n => "$" + n.toLocaleString("es-MX");
 /* ---------------- Año del footer ---------------- */
 $("#year").textContent = new Date().getFullYear();
 
-/* ---------------- Enlaces de contacto ---------------- */
+/* ---------------- Enlace de WhatsApp (pedido) ---------------- */
 const waLink = (texto) =>
   `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(texto)}`;
-
-$("#wa-directo").href = waLink("¡Hola Gaby! Tengo una duda sobre tus materiales ✏️");
-$("#mail-directo").href = `mailto:${CONFIG.email}?subject=${encodeURIComponent("Consulta sobre materiales")}`;
 
 /* ---------------- Menú móvil ---------------- */
 const navToggle = $("#nav-toggle");
